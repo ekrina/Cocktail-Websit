@@ -1,0 +1,50 @@
+{% extends "layout.html" %} {% block content %}
+<html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
+
+<body id="grad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 bottom_row_padding">
+                <div class="top_padding center"></div>
+                <div class="homepage oswald">Want to learn how to make drinks for you and your friends?</div>
+            </div>
+        </div>
+        <div class="row whiteback row-full">
+            <div class="col col-md-12 whiteback">
+                <div class="row gap">
+                    <div class="col-md-3 center oswald" id="border">
+                        <b class="head">Tequila Sunrise</b><br> 
+                        <div class="padborder tbpadding"></div>
+                        <span class="tiny">Evokes a summer sunrise with bright colors.It has a bright citrusy taste.</span>
+                        <br>
+                        <div class="tbpadding"></div>
+                        <button onclick="location.href='/howtovid/tequilasunrise'" class="bigbutton white-text">Learn Here</button>
+                    </div>
+                    <div class="col-md-3 center oswald" id="border">
+                            <b class="head">Gin and Tonic</b><br> 
+                            <div class="padborder tbpadding"></div>
+                            <span class="tiny">Sweet, sour, or however you want to make it. Tastes like an adult limeade.</span>
+                            <br>
+                            <div class="tbpadding"></div>
+                            <button onclick="location.href='/howtovid/ginandtonic'" class="bigbutton white-text">Learn Here</button>
+                    </div>
+                    <div class="col-md-3 center oswald" id="border">
+                            <b class="head">Margarita</b><br> 
+                            <div class="padborder tbpadding"></div>
+                            <span class="tiny">Zesty and fresh with citrus nodes. More tame in sweetness level.</span>
+                            <br>
+                            <div class="tbpadding"></div>
+                            <button onclick="location.href='/howtovid/margarita'" class="bigbutton white-text">Learn Here</button></span>
+                    </div>
+                </div>
+            </div>
+        <div id="popmovies"></div>
+    </div>
+<body>
+{% endblock %}

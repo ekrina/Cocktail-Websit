@@ -1,0 +1,384 @@
+.bottom_row_padding{
+    padding-bottom: 10px;
+}
+.top_padding{
+    padding-top: 70px;
+}
+.center{
+    text-align: center;
+}
+.leftjust{
+    text-align: left;
+    padding-left: 40px;
+}
+.right{
+    text-align: right;
+}
+.title{
+    position: relative;
+    right: -100px;
+}
+#body{
+    margin: 0%;
+}
+.padright{
+    margin-left: 58%;
+}
+.tbpadding{
+    padding-top: 10px;
+    padding-bottom:20px;
+}
+.hint {
+    margin-left: 50px;
+    margin-top: 100px;
+    position: fixed;
+    height: 45px;
+    width: 100px;
+    background-color: orange;
+    font-size: 25px;
+    font-family: Oswald;
+    color: white;
+}
+.donebutton{
+    padding-top: 300px;
+    padding-left: 270px;
+    position: fixed;
+    bottom: 100px;
+}
+.fixed{
+    position: fixed;
+    right: 460px;
+}
+.left {
+    right: 550px;
+}
+.tablepad{
+    padding-top: 140px;
+}
+#grad {
+    background-image: linear-gradient(to right, rgb(223, 82, 43) ,rgb(231, 99, 22), rgb(237, 154, 45));
+    margin: 0%;
+}
+.table{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 300px;
+    right: -100px;
+}
+.homepage{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+.beaker{
+    width: 100px;
+    height: 120px;
+    top: 270px;
+    left: 690px;
+    position: fixed;
+}
+.leftside{
+    margin-left: -70px;
+}
+.labelpad{
+    font-family: Oswald;
+    font-size: 30px;
+    color: white;
+}
+.rightside{
+    margin-left: 70px;
+}
+.smallshift{
+    margin-left: 70px;
+}
+.orange{
+    width: 90px;
+    height: 180px;
+    margin-top: 70px;
+    margin-left: -220px;
+}
+.grenadine{
+    width: 50px;
+    height: 180px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.limejuice{
+    width: 50px;
+    height: 160px;
+    margin-top: 70px;
+    margin-left: -40px;
+}
+.tonic{
+    width: 40px;
+    height: 180px;
+    margin-top: 70px;
+    margin-left: -240px;
+}
+.simple{
+    width: 50px;
+    height: 180px;
+    margin-top: 70px;
+    margin-left: 90px;
+}
+.triplesec{
+    width: 40px;
+    height: 180px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.cherry{
+    width: 40px;
+    height: 110px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.lime{
+    width: 170px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 170px;
+}
+.limelabel{
+    margin-left: 250px;
+}
+.tequila{
+    width: 90px;
+    height: 170px;
+    margin-top: 30px;
+    margin-left: 55px;
+}
+.gin{
+    width: 130px;
+    height: 190px;
+    margin-top: 30px;
+}
+.gamepage{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.drinkborder{
+    border: 3px;
+}
+.whiteback{
+    background-color: white;
+    height: 200px;
+}
+.container-fluid{
+    margin:0%;
+}
+.row-full{
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+    left: -165px;
+    bottom: -100px;
+}
+.head{
+    font-size: 30px;
+    font-weight: 600;
+}
+.oswald{
+    font-family: Oswald;
+}
+.bigbutton{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 60px;
+    width: 250px;
+    background-color: orange;
+    font-size: 25px;
+    font-family: Oswald;
+    color: white;
+    margin-left: -20px;
+}
+#border{
+    border: 1px solid black;
+    padding: 40px;
+    height: 300px;
+    width: fit-content;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.gap{
+    column-gap: 60px;
+}
+.tiny{
+    font-size: 20px;
+}
+.pad{
+    padding-bottom: 10px;
+}
+.heading {
+    font-family: Oswald;
+    font-size: 40px;
+    color: white;
+}
+.white-text {
+    color: white;
+}
+.small {
+    font-size: 24px;
+}
+.medium {
+    font-size: 28px;
+}
+#videos{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: -100;
+}
+.timer{
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+}
+.nopad{
+    margin: 0%;
+}
+.inglabel{
+    color: white;
+    font-family: Oswald;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.ingpad{
+    padding-left: 20x;
+}
+.check{
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+}
+.quiz-options {
+    padding-left: 50px;
+}
+.quiz_question {
+    background-color: white;
+    height: 550px;
+}
+.success_message {
+    top: 200px;
+    position: relative;
+    left: 90px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ginandtonic1 {
+    position: relative;
+    background-color: white;
+    height: 30px;
+    width: 80px;
+    left: 320px;
+    bottom: 90px;
+}
+.ginandtonic2 {
+    position: relative;
+    background-color: white;
+    height: 30px;
+    width: 80px;
+    left: 320px;
+    bottom: 150px;
+}
+.margarita1 {
+    position: relative;
+    background-color: rgb(236, 238, 188);
+    height: 15px;
+    width: 80px;
+    left: 320px;
+    bottom: 75px;
+}
+.margarita2 {
+    position: relative;
+    background-color: rgb(236, 238, 188);
+    height: 15px;
+    width: 80px;
+    left: 320px;
+    bottom: 105px;
+}
+.margarita3 {
+    position: relative;
+    background-color: rgb(236, 238, 188);
+    height: 15px;
+    width: 80px;
+    left: 320px;
+    bottom: 135px;
+}
+.margarita4 {
+    position: relative;
+    background-color: rgb(236, 238, 188);
+    height: 15px;
+    width: 80px;
+    left: 320px;
+    bottom: 165px;
+}
+.orangecolor{
+    background-color: rgb(251, 202, 118);
+}
+.grenadinecolor{
+    background-color: rgb(233, 78, 31);
+}
+.tequilacolor{
+    background-color: rgb(221, 128, 40);
+}
+.toniccolor{
+    background-color: rgb(226, 213, 190);
+}
+.simplecolor{
+    background-color: rgb(232, 203, 194);
+}
+.limecolor{
+    background-color: rgb(186, 216, 193);
+}
+.gincolor{
+    background-color: rgb(239, 214, 191);
+}
+.drink{
+    position: absolute;
+    z-index:10;
+    margin-top: 10px;
+    float: inherit;
+    height: 72px;
+    width: 90px;
+    border-radius: 20px;
+    top: 245px;
+    right: 142px;
+}
+.tequilasunrise1 {
+    position: relative;
+    background-color: rgb(251, 202, 118);
+    height: 20px;
+    width: 80px;
+    left: 320px;
+    bottom: 80px;
+}
+.tequilasunrise2 {
+    position: relative;
+    background-color: rgb(251, 202, 118);
+    height: 20px;
+    width: 80px;
+    left: 320px;
+    bottom: 120px;
+}
+.tequilasunrise3 {
+    position: relative;
+    background-color: rgb(251, 202, 118);
+    height: 20px;
+    width: 80px;
+    left: 320px;
+    bottom: 160px;
+}
+
+.feedback{
+    font-size: 50px;
+    margin-left: -20px;
+}
+.message{
+    font-size: 25px;
+    color: rgb(111, 110, 110);
+    margin-left: -20px;
+    padding: 5px;
+}

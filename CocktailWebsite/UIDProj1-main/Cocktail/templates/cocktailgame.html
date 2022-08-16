@@ -1,0 +1,56 @@
+{% extends "layout.html" %} {% block content %}
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" src="{{ url_for('static', filename = 'cocktailgame.js') }}"></script>
+<body id="grad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 leftside">
+            </div>
+            <div class="col-md-6 gamepage">
+                <p class="title fixed">Make a {{drink.title}}</p>
+                <div class="tiny title fixed top_padding left">You have <span class="js-timeout">2:00</span> to make this drink.</div>
+                <button id = 'hintbutton' class = "hint white-text">Hint</button>
+                <div class="tablepad"></div>
+                <img class="table" src="https://www.pngall.com/wp-content/uploads/2016/04/Table-Download-PNG.png"/> 
+                <img class="beaker" src="https://www.nicepng.com/png/full/90-909225_beaker-coloring-page-beaker-with-solution.png">
+                <div class = "fill"></div>
+                <div id = "success_message" class = "success_message medium text-center"></div>
+                <div class="row donebutton">
+                <button id='drinkdone' disabled=true onclick="location.href='/'" class="bigbutton white-text">Done</button>
+                </div>
+                <div class="tiny title">Drag and drop items into the beaker to play.</div>
+            </div>
+            <div class="col-md-3 rightside">
+            </div>
+        </div>
+    </div>
+    <div class = "row text-center">
+        <div id="dialog-form" title="How much is in the drink?">
+            <div id="cocktailq" class="grouped">
+                <select name="types" id="permit">
+                  <option selected="selected" value="">-- select quantity --</option>
+                  <option value="1">3/4 Ounces</option>
+                  <option value="2">1 Ounce</option>
+                  <option value="3">1 1/2 Ounces</option>
+                  <option value="4">2 Ounces</option>
+                  <option value="5">1/2 Cup</option>
+                  <option value="6">3/4 Cup</option>
+                  <option value="7">1</option>
+                </select>
+        </div>
+        <div id="dialog" title="{{drink.title}} Ingredient List">
+            <div id="cocktailq" class="grouped">
+                {% for l in drink.ingredients %}
+                <li>{{l}}</li>
+                {% endfor %}
+        </div>
+        <div id ="feedback" class = 'text-center'>
+            
+        </div>
+    </div>
+<body>
+{% endblock %}

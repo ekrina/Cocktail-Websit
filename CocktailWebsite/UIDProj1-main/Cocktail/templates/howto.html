@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block content %}
+<html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'howto.js') }}"></script>
+<script>
+    let drink = {{drink|tojson}}
+</script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<body id="grad">
+    <div class="container">
+            <div class="divpad center homepage"> 
+                <b>{{drink.title}}</b> 
+            </div>
+            <div class="row">
+                <div class="col-lg-6 top_padding">
+                    <iframe id="videos" src="{{drink.video}}"></iframe> 
+                </div>
+                <div class="col-lg-6 top_padding">
+                    <div class = "heading center">Ingredients List for {{drink.title}}</div>
+                    <div id="ingredients" class ="ingredients"></div>
+                </div>
+            </div>
+            <div class="row center top_padding">
+                <div class="col-lg-6">
+                    <button id=game disabled=true onclick="location.href='/cocktailgame/{{drink.id}}'" class="bigbutton white-text">Cocktail Game</button>
+                </div>
+                <div class="col-lg-6 ">
+                    <button onclick="location.href='/'" class="bigbutton white-text">Home</button>
+                </div>
+            </div>
+    </div>
+<body>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "layout.html" %} {% block content %}
+<html>
+<script>
+    var quiz = {{quiz|tojson}}
+    var qno = {{qno|tojson}}
+    var n = {{n|tojson}}
+</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" src="{{ url_for('static', filename = 'quiz.js') }}"></script>
+
+
+
+<body id="grad">
+    <div class="container">
+        <div class = "row">
+            <div class = "col">
+                <div class="homepage"> 
+                    <b>{{quiz.title}}</b> 
+                </div>
+                <div class = "quiz_question">
+                    <div id = "question_number" class = " center tiny">
+
+                    </div>
+                    <div id = "question" class = "medium center">
+                        
+                    </div>
+                    <div id = "options" class = " medium quiz-options">
+
+                    </div>
+                    <div id = "submit_button" class = "center">
+
+                    </div>
+                    <div id = "feedback" class = "center feedback">
+                    </div>
+                    <div id = "message" class = "center message">
+                    </div>
+                    <div id = "next_button" class = "center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<body>
+{% endblock %}
